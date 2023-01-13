@@ -1,20 +1,18 @@
-# Training DETR on Custom Dataset
-Tutorial Video [link](https://www.youtube.com/watch?v=RkhXoj_Vvr4&lc=UgwHlStd7pa4KMszFQx4AaABAg&ab_channel=DeepReader)  
-Code based on [End-to-end Object Detection with Transformer](https://github.com/facebookresearch/detr)
+# Face Detection Using Detection Transformer
 
 ## Step 1.
-Download wider face dataset [link](http://shuoyang1213.me/WIDERFACE/) and unzip the files in dataset folder
+Download WiderFace dataset [link](http://shuoyang1213.me/WIDERFACE/) kemudian unzip file dan masukkan ke dalam dataset folder
 
 ## Step 2.
-Move to the dataset folder, and convert downloaded wider face dataset into COCO format
+Pindahkan direktori ke folder dataset dan jalankan perintah berikut untuk mengubah dataset WiderFace menjadi COCO format
 ```
 $ python face_to_coco.py
 ```
 
 ## Step 3.
-Move to detr folder and run main.py
+Pindahkan direktori ke folder detr dan run main.py
 ```
-$ python -m torch.distributed.launch --nproc_per_node=[num_of_gpus] --use_env main.py --data_path ../dataset/
+$ python main.py --dataset_file face --data_path ../dataset/ --output_dir output
 ```
 
 ## Step 4.
