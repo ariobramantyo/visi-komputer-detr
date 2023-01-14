@@ -1,7 +1,7 @@
 # Face Detection Using Detection Transformer
 
 ## Step 1.
-Download WiderFace dataset [link](http://shuoyang1213.me/WIDERFACE/) kemudian unzip file dan masukkan ke dalam dataset folder
+Download [WiderFace dataset](http://shuoyang1213.me/WIDERFACE/) kemudian unzip file dan masukkan ke dalam dataset folder
 
 ## Step 2.
 Pindahkan direktori ke folder dataset dan jalankan perintah berikut untuk mengubah dataset WiderFace menjadi COCO format
@@ -20,3 +20,5 @@ Run test.py
 ```
 $ python test.py --data_path ../dataset/WIDER_test/images/ --resume [path_to_checkpoint.pth]
 ```
+
+Hasil training model dapat didownload [di sini](https://drive.google.com/drive/folders/1KtuyzGpqrB8FiODTRwF5A-5L42QX9ALm?usp=sharing)
